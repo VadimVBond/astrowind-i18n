@@ -1,3 +1,6 @@
+import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
+import type { HTMLAttributes, ImageMetadata } from 'astro/types';
+
 export interface Post {
   /** A unique ID number that identifies a post. */
   id: string;
@@ -18,12 +21,12 @@ export interface Post {
   /** Optional summary of post content. */
   excerpt?: string;
   /**  */
-  image?: string;
+  image?: ImageMetadata | string;
 
   /**  */
-  category?: string;
+  category?: Taxonomy;
   /**  */
-  tags?: Array<string>;
+  tags?: Taxonomy[];
   /**  */
   author?: string;
 
@@ -34,11 +37,16 @@ export interface Post {
   draft?: boolean;
 
   /**  */
-  Content?: unknown;
+  Content?: AstroComponentFactory;
   content?: string;
 
   /**  */
   readingTime?: number;
+}
+
+export interface Taxonomy {
+  slug: string;
+  title: string;
 }
 
 export interface LocalizedPost {
