@@ -28,7 +28,7 @@ export const ru = {
     pages: { title: 'Страницы', features: 'Функции (якорная ссылка)', services: 'Услуги', pricing: 'Цены', aboutUs: 'О нас', contactUs: 'Контакты', terms: 'Условия', privacyPolicy: 'Политика конфиденциальности' },
     landing: { title: 'Лендинг', leadGeneration: 'Генерация лидов', sales: 'Длинные продажи', clickThrough: 'Кликабельная страница', squeeze: 'Squeeze', product: 'Информация о продукте (или услугах)', comingSoon: 'Скоро будет', gallery: 'Галерея',
       galleryHero: { tagline: 'Портфолио', title: 'Наши проекты', subtitle: 'Узнайте о наших недавних проектах и историях успеха.', goBack: 'Назад' }, },
-    blog: { title: 'Блог', blogList: 'Список статей', article: 'Статья', articleMdx: 'Статья (с MDX)', category: 'Страница категории', tag: 'Страница тега' },
+    blog: { title: 'Блог', blogList: 'Список статей', article: 'Статья', mkdocs: 'MkDocs статья', ai: 'AI в разработке', multi: 'Мульти-архитектура', twbs: 'Tailwind vs Bootstrap', autonav: 'Markdown навигация', articleMdx: 'Статья (с MDX)', category: 'Страница категории', tag: 'Страница тега' },
     widgets: 'Виджеты', contact: 'Контакты', download: 'Скачать',
   },
   footer: {
@@ -319,8 +319,11 @@ export const ru = {
   blog: {
     title: 'Блог',
     subtitle:
-      'Статически сгенерированный пример блога с новостями, учебниками, ресурсами и другим интересным контентом, связанным с AstrowInd',
+      'Статически сгенерированный пример блога с новостями, учебниками, ресурсами и другим интересным контентом, связанным с AstroWind',
     tags: 'Теги:',
+    olderPosts: 'Старые статьи',
+    newerPosts: 'Новые статьи',
+    readingTime: 'мин чтения',
   },
 
   personal_p: {
@@ -539,6 +542,11 @@ export const ru = {
       },
   }
 };
+
+
+
+
+
 
 
 

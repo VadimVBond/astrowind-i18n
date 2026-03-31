@@ -9,7 +9,7 @@ export const fr = {
     pages: { title: 'Pages', features: 'Fonctionnalités (Lien ancre)', services: 'Services', pricing: 'Tarifs', aboutUs: 'À propos', contactUs: 'Contact', terms: 'Conditions', privacyPolicy: 'Politique de confidentialité' },
     landing: { title: 'Landing', leadGeneration: 'Génération de leads', sales: 'Ventes longue forme', clickThrough: 'Clic à travers', squeeze: 'Squeeze', product: 'Détails du produit (ou services)', comingSoon: 'Bientôt disponible', gallery: 'Galerie',
       galleryHero: { tagline: 'Portfolio', title: 'Nos Projets', subtitle: 'Découvrez nos projets récents et nos cas de réussite.', goBack: 'Retour' }, },
-    blog: { title: 'Blog', blogList: 'Liste des articles', article: 'Article', articleMdx: 'Article (avec MDX)', category: 'Page de catégorie', tag: 'Page de tag' },
+    blog: { title: 'Blog', blogList: 'Liste des articles', article: 'Article', mkdocs: 'Article MkDocs', ai: 'Contexte AI', multi: 'Architecture i18n', twbs: 'Tailwind vs Bootstrap', autonav: 'Navigation auto Markdown', articleMdx: 'Article (avec MDX)', category: 'Page de catégorie', tag: 'Page de tag' },
     widgets: 'Widgets', contact: 'Contact', download: 'Télécharger',
   },
   footer: {
@@ -317,10 +317,14 @@ export const fr = {
     },
   },
   blog: {
-    title: 'Blog',
-    subtitle: 'Exemple de blog statique avec actualités, tutoriels, ressources et autres contenus intéressants sur AstroWind',
-    tags: 'Tags:',
+    title: 'Le Blog',
+    subtitle: 'Un exemple de blog généré statiquement avec des actualités, des tutoriels, des ressources et autres contenus intéressants liés à AstroWind',
+    tags: 'Tags :',
+    olderPosts: 'Articles plus anciens',
+    newerPosts: 'Articles plus récents',
+    readingTime: 'min de lecture',
   },
+
   personal_p: {
     cta: {
       title: "Créons ensemble",
@@ -437,6 +441,14 @@ export const fr = {
     landings,
   },
 };
+
+
+
+
+
+
+
+
 
 
 

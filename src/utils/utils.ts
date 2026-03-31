@@ -1,20 +1,12 @@
-import { I18N } from '~/utils/config';
-
-const formatter =
-  I18N?.dateFormatter ||
-  new Intl.DateTimeFormat('en', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-    timeZone: 'UTC',
-  });
-
 /* eslint-disable no-mixed-spaces-and-tabs */
-export const getFormattedDate = (date: Date) =>
+export const getFormattedDate = (date: Date, locale = 'en') =>
   date
-    ? // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      /* @ts-ignore */
-      formatter.format(date)
+    ? new Intl.DateTimeFormat(locale, {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        timeZone: 'UTC',
+      }).format(date)
     : '';
 
 export const trim = (str = '', ch?: string) => {

@@ -37,9 +37,14 @@ export const it = {
       title: 'Blog',
       blogList: 'Elenco articoli',
       article: 'Articolo',
+      mkdocs: 'Articolo MkDocs',
+      ai: 'IA Sviluppo',
+      multi: 'Architettura I18n',
+      twbs: 'Tailwind vs Bootstrap',
+      autonav: 'Navigazione Markdown',
       articleMdx: 'Articolo (con MDX)',
-      category: 'Categoria',
-      tag: 'Tag',
+      category: 'Pagina categoria',
+      tag: 'Pagina tag',
     },
     widgets: 'Widget',
     contact: 'Contatto',
@@ -353,10 +358,14 @@ export const it = {
     },
   },
   blog: {
-    title: 'Il Blog',
-    subtitle: 'Un esempio di blog generato staticamente con notizie e tutorial correlati ad AstroWind',
-    tags: 'Tag:',
+    title: "Il Blog",
+    subtitle: "Un esempio di blog generato staticamente con notizie, tutorial, risorse e altri contenuti interessanti relativi ad AstroWind",
+    tags: "Tag:",
+    olderPosts: "Articoli meno recenti",
+    newerPosts: "Articoli più recenti",
+    readingTime: "min di lettura",
   },
+
   personal_p: {
     cta: {
       title: "Creiamo insieme",
@@ -523,6 +532,12 @@ export const it = {
     landings,
   },
 };
+
+
+
+
+
+
 
 
 

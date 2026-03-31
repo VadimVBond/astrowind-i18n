@@ -72,6 +72,11 @@ export const getHeaderData = (locale) => {
       links: [
         { text: t('header.blog.blogList'), href: getLocalizedBlogPermalink(locale) },
         { text: t('header.blog.article'), href: getLocalizedPermalink(locale, 'get-started-website-with-astro-tailwind-css', 'post') },
+        { text: t('header.blog.mkdocs'), href: getLocalizedPermalink(locale, 'mkdocs_extended_article', 'post') },
+        { text: t('header.blog.ai'), href: getLocalizedPermalink(locale, 'astrowind_pf_blog_ai_controlled_development', 'post') },
+        { text: t('header.blog.multi'), href: getLocalizedPermalink(locale, 'multilingual_site_architecture', 'post') },
+        { text: t('header.blog.twbs'), href: getLocalizedPermalink(locale, 'astrowind_pf_blog_tailwind_vs_bootstrap', 'post') },
+        { text: t('header.blog.autonav'), href: getLocalizedPermalink(locale, 'astrowind_pf_blog_auto_navigation_markdown', 'post') },
         { text: t('header.blog.articleMdx'), href: getLocalizedPermalink(locale, 'markdown-elements-demo-post', 'post') },
         { text: t('header.blog.category'), href: getLocalizedPermalink(locale, 'tutorials', 'category') },
         { text: t('header.blog.tag'), href: getLocalizedPermalink(locale, 'astro', 'tag') },

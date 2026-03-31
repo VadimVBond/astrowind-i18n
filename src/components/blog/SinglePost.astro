@@ -7,6 +7,7 @@ import SocialShare from '~/components/common/SocialShare.astro';
 
 import { getPermalink } from '~/utils/permalinks';
 import { getFormattedDate } from '~/utils/utils';
+import { getLocaleFromUrl, useTranslations } from '~/i18n/translator';
 
 import type { Post } from '~/types';
 
@@ -16,6 +17,7 @@ export interface Props {
 }
 
 const { post, url } = Astro.props;
+const locale = getLocaleFromUrl(Astro.url);
 const Content = post?.Content || null;
 ---
 
@@ -25,7 +27,7 @@ const Content = post?.Content || null;
       <div class="flex justify-between flex-col sm:flex-row max-w-3xl mx-auto mt-0 mb-2 px-4 sm:px-6 sm:items-center">
         <p>
           <Icon name="tabler:clock" class="w-4 h-4 inline-block -mt-0.5 dark:text-gray-400" />
-          <time datetime={String(post.publishDate)} class="inline-block">{getFormattedDate(post.publishDate)}</time>
+          <time datetime={String(post.publishDate)} class="inline-block">{getFormattedDate(post.publishDate, locale)}</time>
           {
             post.category && (
               <>
@@ -37,7 +39,7 @@ const Content = post?.Content || null;
               </>
             )
           }
-          {post.readingTime && <> · {post.readingTime} min read</>}
+          {post.readingTime && <> · {post.readingTime} {t('blog.readingTime')}</>}
         </p>
       </div>
       <h1
@@ -62,7 +64,6 @@ const Content = post?.Content || null;
             loading="eager"
             width={900}
             height={506}
-            loading="eager"
             decoding="async"
           />
         ) : (
@@ -89,3 +90,5 @@ const Content = post?.Content || null;
     </div>
   </article>
 </section>
+
+

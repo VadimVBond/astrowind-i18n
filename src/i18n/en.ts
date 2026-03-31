@@ -51,14 +51,7 @@ export const en = {
       gallery: 'Gallery',
       galleryHero: { tagline: 'Portfolio', title: 'Our Projects', subtitle: 'Discover our recent projects and success cases.', goBack: 'Go back' },
     },
-    blog: {
-      title: 'Blog',
-      blogList: 'Blog List',
-      article: 'Article',
-      articleMdx: 'Article (with MDX)',
-      category: 'Category Page',
-      tag: 'Tag Page',
-    },
+    blog: { title: 'Blog', blogList: 'Blog List', article: 'Article', mkdocs: 'MkDocs Article', ai: 'AI Context', multi: 'I18n Architecture', twbs: 'Tailwind vs Bootstrap', autonav: 'Markdown Auto Nav', articleMdx: 'Article (with MDX)', category: 'Category Page', tag: 'Tag Page' },
     widgets: 'Widgets',
     contact: 'Contact',
     download: 'Download',
@@ -389,6 +382,9 @@ export const en = {
     subtitle:
       'A statically generated blog example with news, tutorials, resources and other interesting content related to AstroWind',
     tags: 'Tags:',
+    olderPosts: 'Older posts',
+    newerPosts: 'Newer posts',
+    readingTime: 'min read',
   },
 
   personal_p: {
@@ -607,6 +603,11 @@ export const en = {
       },
   }
 }
+
+
+
+
+
 
 
 
